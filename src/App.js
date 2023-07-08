@@ -27,7 +27,7 @@ function App() {
   }, [])
 
   return (
-<div>
+  <div>
     <div id="wrap">
       <div id="header">
       Header
@@ -51,15 +51,13 @@ function App() {
           placeImages={placeImages}
         />
       </div>
-
       <div id="slidepos">
         <A
           placeImages={placeImages}
         />
       </div>
-
     </div>
-    </div>
+  </div>
   );
 }
 
