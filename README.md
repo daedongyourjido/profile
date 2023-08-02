@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# 라우팅
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1. main page
+<img width="1680" alt="스크린샷 2023-07-12 오후 8 50 01" src="https://github.com/daedongyourjido/full_code/assets/90092013/2ab08461-e99c-446b-a070-b2e1eb096976">
 
-## Available Scripts
+1) 지도 상의 지역 -> '/{지역명}' : 각 지역별 게시판으로 이동
+2) Sign In 버튼 (로그아웃 상태) -> '/login' : 로그인 페이지로 이동
+3) 프로필 사진 & 닉네임 (로그인 상태) -> '/profile' : 프로필 화면으로 이동
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 2. login page 
+<img width="1680" alt="스크린샷 2023-07-12 오후 8 58 23" src="https://github.com/daedongyourjido/full_code/assets/90092013/8d73d5e5-0154-4607-a55f-b7d50a2afcb6">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1) Sign Up 버튼 -> '/signup' : 회원가입 페이지로 이동
+2) 로고 -> '/' : 메인으로 이동
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## 3. signup page
+<img width="1680" alt="스크린샷 2023-07-12 오후 9 00 12" src="https://github.com/daedongyourjido/full_code/assets/90092013/7ba5636d-37cc-4ba2-877a-5c7137caceae">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1) Sign In 버튼 -> '/login' : 로그인 페이지로 이동
+2) 로고 -> '/' : 메인으로 이동
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 4. profile page
+<img width="1680" alt="스크린샷 2023-07-12 오후 8 55 25" src="https://github.com/daedongyourjido/full_code/assets/90092013/e26ae1d5-853f-4939-808c-7da1b6427cee">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. 설정 아이콘 (임시 위치지정) -> '/setting/change' : 비밀번호변경 페이지로 이동
+2. Header -> '/' : 메인으로 이동 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 5. setting page
+<img width="1680" alt="스크린샷 2023-07-12 오후 9 02 52" src="https://github.com/daedongyourjido/full_code/assets/90092013/f25dced5-a69d-45c9-80a3-6563fc0b61f0">
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. 회원 탈퇴 -> '/setting/withdraw' : 회원 탈퇴 페이지로 이동
+2. 로고 -> '/' : 메인으로 이동
+3. 뒤로 가기 화살표 -> '/profile' : 프로필로 이동 (설정 페이지 접근할 수 있는 루트가 프로필 밖에 없어서 일단 프로필로만 지정)
